@@ -1,1 +1,3 @@
 selenium~=3.141.0
+pygame~=2.0.1
+network~=0.1

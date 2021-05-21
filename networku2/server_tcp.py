@@ -13,7 +13,7 @@ try:
 except socket.error as e:
     print(str(e))
 
-server_socket.listen(1)
+server_socket.listen(2)
 print("server is run!")
 
 (client_socket, client_address) = server_socket.accept()
