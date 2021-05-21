@@ -5,13 +5,15 @@ today = date.today()
 
 hostname = socket.gethostname()
 ip_address = socket.gethostbyname(hostname)
-print(f"Hostname: {hostname}")
 print(f"IP Address: {ip_address}")
-
+SERVER = ''
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+try:
+    server_socket.bind((SERVER, 5555))
+except socket.error as e:
+    print(str(e))
 
-server_socket.bind((ip_address, 5050))
-server_socket.listen()
+server_socket.listen(1)
 print("server is run!")
 
 (client_socket, client_address) = server_socket.accept()
