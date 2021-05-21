@@ -31,7 +31,7 @@ while True:
         send_data = str(random.randint(1, 10))
 
     else:
-        send_data = input("")
+        send_data = data
     client_socket.send(send_data.encode())
 
 client_socket.close()
