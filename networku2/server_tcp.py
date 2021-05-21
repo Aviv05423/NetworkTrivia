@@ -10,7 +10,7 @@ print(f"IP Address: {ip_address}")
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-server_socket.bind((hostname, 1234))
+server_socket.bind((ip_address, 5050))
 server_socket.listen()
 print("server is run!")
 
