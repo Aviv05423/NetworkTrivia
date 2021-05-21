@@ -1,21 +1,16 @@
-
-
+import random
+from datetime import date
 import socket
-## getting the hostname by socket.gethostname() method
+today = date.today()
+
 hostname = socket.gethostname()
-## getting the IP address using socket.gethostbyname() method
 ip_address = socket.gethostbyname(hostname)
-## printing the hostname and ip_address
 print(f"Hostname: {hostname}")
 print(f"IP Address: {ip_address}")
 
-from datetime import date
-today = date.today()
-
-import random
-
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server_socket.bind(("", 8822))
+
+server_socket.bind((hostname, 1234))
 server_socket.listen()
 print("server is run!")
 
