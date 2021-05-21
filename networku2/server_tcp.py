@@ -15,7 +15,7 @@ today = date.today()
 import random
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server_socket.bind(("192.168.1.25", 8822))
+server_socket.bind(("5.28.133.25", 22))
 server_socket.listen()
 print("server is run!")
 
