@@ -11,7 +11,7 @@ def login(message):
 
 @bot.message_handler(commands=['hi'])
 def hi(message):
-    bot.send_message(message.chat.id, "hey1")
+    bot.send_message(message.chat.id, "hey2")
 
 
 bot.polling()
