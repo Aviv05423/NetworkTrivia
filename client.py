@@ -2,7 +2,7 @@ import socket
 import chatlib  # To use chatlib functions or consts, use chatlib.****
 import time
 
-SERVER_IP = "127.0.0.1"  # Our server will run on same computer as client
+SERVER_IP = "http://ec2-18-222-216-47.us-east-2.compute.amazonaws.com"  # Our server will run on same computer as client
 SERVER_PORT = 5678
 
 

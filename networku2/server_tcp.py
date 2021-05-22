@@ -6,7 +6,7 @@ today = date.today()
 hostname = socket.gethostname()
 ip_address = socket.gethostbyname(hostname)
 print(f"IP Address: {ip_address}")
-SERVER = '0.0.0.0'
+SERVER = ''
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 try:
     server_socket.bind((SERVER, 5555))
